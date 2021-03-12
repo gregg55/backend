@@ -1,6 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+
+// add app.use(express.json()) for POSTMAN updates and New Adds to work
 app.use(express.json());
 
 // // HOMEPAGE
