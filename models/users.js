@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
 
     }
   };
-  Users.init({
+  User.init({
     name: DataTypes.STRING
   }, {
     sequelize,

@@ -1,6 +1,7 @@
-
+require("dotenv").config();
 const express = require("express");
 const app = express();
+app.use(express.json());
 
 // // HOMEPAGE
 app.get("/", (req, res) => {
@@ -8,9 +9,9 @@ app.get("/", (req, res) => {
 });
 
 // app.use("/api/auth", require("./controllers/authController.js"));
-// app.use("/api/users", require("./controllers/usersController.js"));
-// // added step below for artistsController
-// app.use("/api/artists", require("./controllers/artistsController.js"));
+app.use("/api/users", require("./controllers/usersController.js"));
+
+app.use("/api/authors", require("./controllers/authorsController.js"));
 
 
 

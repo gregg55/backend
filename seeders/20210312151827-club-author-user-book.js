@@ -9,7 +9,7 @@ let authors = await queryInterface.bulkInsert("Authors", [
 
 let books = await queryInterface.bulkInsert("Books", [
 // John Grisham Pre-loaded Seeding Data 
-{ title: "The Firm", authorId: 1 },
+{ title: "The Firm" , authorId: 1},
 { title: "The Reckonining", authorId: 1 },
 { title: "The Guardian", authorId: 1 },
 { title: "The Pelican Brief", authorId: 1 },
@@ -20,7 +20,7 @@ let books = await queryInterface.bulkInsert("Books", [
 { title: "The Rainmaker", authorId: 1 },
 
 
-// James Patterson Pre-loaded Seeding Data 
+// // James Patterson Pre-loaded Seeding Data 
 
 { title: "Home", authorId: 2 },
 { title: "BookShots", authorId: 2 },
