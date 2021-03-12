@@ -14,7 +14,7 @@ router.get("/profile/:id", async (req, res) => {
     res.json({ author });
   });
     
-    // // GET ALL Authors - POSTMAN CHECK 
+    // // GET ALL Authors - POSTMAN CHECK  - Confirmed
     router.get("/", async (req, res) => {
       let author = await AuthorModel.findAll();
       res.json({ author });
