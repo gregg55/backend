@@ -22,7 +22,7 @@ router.get("/profile/:id", async (req, res) => {
     
 // // CREATE A NEW Authors - POSTMAN CHECK 
 router.post("/", async (req, res) => {
-  let author = await UserModel.create(req.body);
+  let author = await AuthorModel.create(req.body);
   res.json({ author });
 });
 
