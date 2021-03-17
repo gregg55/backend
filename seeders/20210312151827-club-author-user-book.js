@@ -5,15 +5,15 @@ up: async (queryInterface, Sequelize) => {
 let authors = await queryInterface.bulkInsert("Authors", [
 
 // Pre-loading Seeding Data for Authors 
-{ name: "John Grisham "},
+{ name: "John Grisham"},
 { name: "James Patterson" },
-{ name: "Joe Smith "},
+{ name: "Joe Smith"},
 { name: "Bob Williams" },
-{ name: "Steve Smith "},
+{ name: "Steve Smith"},
 { name: "Scott Daniels" },
-{ name: "Billy Bob "},
+{ name: "Billy Bob"},
 { name: "Jimmy Samuels" },
-{ name: "Billy Bob "},
+{ name: "Billy Bob"},
 
 ]);
 

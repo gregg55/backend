@@ -3,12 +3,16 @@ const router = express.Router();
 
 const UserModel = require("../models").User;
 const AuthorModel = require("../models").Author;
+const BookModel = require("../models").Book;
 
 // /// GET Author PROFILE -- POSTMAN CHECK 
 router.get("/profile/:id", async (req, res) => {
     let author = await AuthorModel.findByPk(req.params.id, {
       include: 
-      [{model: UserModel,attributes: ['id','name'] }],
+      [
+        {model: UserModel,attributes: ['id','name'] },
+        {model: BookModel,attributes: ['id','title', 'authorId'] },
+    ],
   
     });
     res.json({ author });
