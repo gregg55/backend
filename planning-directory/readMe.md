@@ -49,4 +49,4 @@ Heroku <br/>
 
 ### Contributors
 
-Gregg Machetta x
+Gregg Machetta x1
